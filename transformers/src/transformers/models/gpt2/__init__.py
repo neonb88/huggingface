@@ -15,6 +15,9 @@ from typing import TYPE_CHECKING
 
 from ...utils import _LazyModule
 from ...utils.import_utils import define_import_structure
+from .integrations.hub_kernels import use_kernel_forward_from_hub
+print("In module gpt __init__.py ,        __package__, __name__ ==", __package__, __name__)    
+
 
 
 if TYPE_CHECKING:

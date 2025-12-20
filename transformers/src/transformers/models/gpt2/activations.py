@@ -19,9 +19,9 @@ from collections import OrderedDict
 import torch
 from torch import Tensor, nn
 
-from .integrations.hub_kernels import use_kernel_forward_from_hub
-from .utils import logging
-from .utils.import_utils import is_torchdynamo_compiling
+from integrations.hub_kernels import use_kernel_forward_from_hub
+from utils import logging
+from utils.import_utils import is_torchdynamo_compiling
 
 
 logger = logging.get_logger(__name__)

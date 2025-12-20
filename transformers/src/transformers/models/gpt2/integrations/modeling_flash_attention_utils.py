@@ -19,16 +19,16 @@ from typing import Optional, TypedDict
 import torch
 import torch.nn.functional as F
 
-from import_utils import (
+from .utils import (
     is_flash_attn_2_available,
     is_flash_attn_3_available,
     is_flash_attn_greater_or_equal_2_10,
     is_torch_npu_available,
-    logging2,
+    logging,
 )
 
 
-logger = logging2.get_logger(__name__)
+logger = logging.get_logger(__name__)
 
 
 # TODO Deprecate when all models have the attention interface
